@@ -18,26 +18,37 @@
 }
 
 /*----------------------------------------Colors-----*/
-
-.red{
-    background-color: red;
-}
+:root {
+    --color-primary: #E0F1FF;
+    --color-secondary: #3ca7ff;
+    
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-main-1: #C7E5FF;
+    --color-main-2: #CBDAFF;
+    --color-main-3: #97CFFF;
+    --color-main-4: #7AC1FF;
+    --color-main-5: #5FB4FF;
+    --color-main-6: hsl(240, 50%, 70%);
+ 
+  }
 
 /*----------------------------------------Borders-----*/
 .border-all-around{
-    border : 5px solid #000;
+    border : 5px solid var(--color-black);
 }
-
+/*----------------------------------------Body-----*/
 body {
     font-family: 'Delius', sans-serif;
 }
 
+/*----------------------------------------Alert Containers-----*/
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
 }
 
-/* Navbar */
+/*----------------------------------------Nav Bar-----*/
 
 .navalert-container {
     position: absolute;
@@ -48,23 +59,63 @@ body {
     padding-right: 0;
 }
 
-.navbar {
-    margin-bottom: 0;
-    width: 100%;
-    background-color: #FFF;
-    border: 0;
-}
 
+.navbar-light .navbar-nav .nav-link {
+    color: var(--color-secondary);
+}
+.active>.nav-link{
+    border-bottom: 1px solid var(--color-primary);
+}
 .navbar .navbar-toggler {
     border: 0;
+
+}
+.navbar li {
+    text-transform: uppercase;
 }
 
-.navbar .navbar-brand {
-    font-family: 'EB_Garamond', sans-serif;
+.btn-login{
+    border-radius : 22px;
+    background-color: var(--color-primary);
+    color: #000;
+    font-size: 14px;
+}
+
+/*----------------------------------------Buttons-----*/
+.btn-login{
+    border-radius : 22px;
+    background-color: var(--color-primary);
+    color: #000;
+    font-size: 14px;
+}
+
+.btn-login:hover{
+    background-color: var(--color-primary);
+    color: #000;
+}
+
+.btn-login:hover a{
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    background-color:var(--color-primary);
+}
+
+/*----------------------------------------Text Layout-----*/
+.align-center{
+    text-align: center;
+}
+
+
+/*----------------------------------------Footer-----*/
+.current-version{
+    font-size: 12px;
+    margin-top: 10px;
     font-weight: 700;
 }
 
-.navbar .navbar-nav a {
-    font-weight: bold;
-}
+footer{
 
+    bottom: 0;
+}
