@@ -52,7 +52,37 @@ html {
   scroll-behavior: smooth;
 }
 
-/*----------------------------------------Rows-----*/
+/*----------------------------------------Alerts-----*/
+.alert{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    left: 15px;
+    z-index: 100;
+    animation-name: animation-alert;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes animation-alert {
+    from {
+        transform: translateX(-100%);
+        
+    }
+
+
+    to
+      {
+
+        transform: translate(0%);
+
+      }
+}
+
+
+
+
+/*----------------------------------------Rows/Cols-----*/
 .row {
     margin: 15px;
     margin-top: 0;
@@ -60,9 +90,7 @@ html {
 .sub-row{
     margin:0;
 }
-.single-col{
-    margin:0;
-}
+
 .sub-row:not(:first-child){
     margin-top: 10px;
 }
