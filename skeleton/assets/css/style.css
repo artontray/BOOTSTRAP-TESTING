@@ -59,25 +59,9 @@ html {
     right: 15px;
     left: 15px;
     z-index: 100;
-    animation-name: animation-alert;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
   }
 
-@keyframes animation-alert {
-    from {
-        transform: translateX(-100%);
-        
-    }
 
-
-    to
-      {
-
-        transform: translate(0%);
-
-      }
-}
 
 
 
@@ -97,6 +81,11 @@ html {
 .col {
     margin: 15px;
 }
+/*----------------------------------------Scrollable container-----*/
+.scrollable-400px {
+    height:400px;
+    overflow-y: scroll;
+  }
 
 /*----------------------------------------Alert Containers-----*/
 .alert-container .col-12 {
