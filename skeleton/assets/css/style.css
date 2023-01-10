@@ -14,8 +14,15 @@
 
 .logo_user{
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    height: 170px;
+    width: 170px;
+
+}
+
+.logo_user_miniature{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 
 }
 
@@ -156,8 +163,18 @@ html {
 .align-center{
     text-align: center;
 }
-
-
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.padding-20px-left{
+    padding-left : 20px;
+}
+.padding-5px-left{
+    padding-left : 5px;
+}
 /*----------------------------------------Footer-----*/
 .current-version{
     font-size: 12px;
