@@ -181,7 +181,10 @@ html {
 .h1_extra_big{
     font-size: 46px;
 }
+.align-justify{
+text-align: justify;
 
+}
 /*----------------------------------------Footer-----*/
 .current-version{
     font-size: 12px;
