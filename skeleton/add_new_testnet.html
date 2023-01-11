@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  <link rel="stylesheet" href="assets/css/sb-admin-2.css">
+  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+  <title>Testnet Organizer</title>
+</head>
+
+<body>
+
+
+  <header>
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm">
+      <img src="assets/images/logo.png" class="logo">
+
+      <!--Button Collapse NavBar for small screens-->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span></button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-2"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="users.html">Users</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="checklist.html">Checklist</a></li>
+          <li class="nav-item mr-2"><a class="btn btn-primary btn-user btn-block" href="#">Connect</a></li>
+
+        </ul>
+      </div>
+      <div class="d-none d-md-block">
+
+      </div>
+      <!--</div>-->
+    </nav>
+
+  </header>
+
+  <!-- Begin Page Content -->
+  <div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="mb-0 text-xl font-weight-bold text-secondary">Add a New Testnet</h1>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row padding-10-pourcent-left-right">
+      
+      <div class="col-xl-6 col-md-12">
+        <div class="card shadow h-100 mb-4">
+
+          <div class="card-header py-3">
+            <h6 class="h3 font-weight-bold text-primary">Testnet Info(s)</h6>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputTestnetName" class="h4 text-primary"><i
+                      class="fa-solid fa-file-signature text-primary"></i> Testnet Name</label>
+                  <input type="text" class="form-control" id="inputTestnetName" placeholder="Testnet Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputNetworkName" class="h4 text-primary"><i
+                      class="fa-solid fa-network-wired text-primary"></i> Network</label>
+                  <input type="password" class="form-control" id="inputNetworkName"
+                    placeholder="Network Name : Goerli, Mumbai, Polygon Mainnet etc...">
+                </div>
+              </div>
+              <div class="form-group ">
+                <label for="inputDescriptionTestnet" class="h4 text-primary"><i
+                    class="fa-solid fa-clipboard-question text-primary"></i> Description</label>
+                <textarea class="form-control" id="inputDescriptionTestnet"
+                  placeholder="Describe this Testnet ...."></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCategoryTestnet" class="h4 text-primary"><i
+                      class="fa-solid fa-folder-open text-primary"></i> Category</label>
+                  <input type="text" class="form-control" id="inputCategoryTestnet"
+                    placeholder="Defi, Bridge, L2, NFT etc...">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputStatusTestnet" class="h4 text-primary"><i class="fa-solid fa-cube"></i> Network
+                    Status</label>
+                  <input type="text" class="form-control" id="inputStatusTestnet"
+                    placeholder="Testnet, Devnet, Mainnet etc...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputTwitterTestnet" class="h4 text-primary"><i
+                    class="fa-brands fa-twitter text-primary"></i> Provide the Twitter account of the Project </label>
+                <input type="text" class="form-control" id="inputTwitterTestnet"
+                  placeholder="Example @Testnet_1_official">
+              </div>
+              <div class="form-group">
+                <label for="inputFacebookTestnet" class="h4 text-primary"><i
+                    class="fa-brands fa-facebook text-primary"></i> Facebook Account</label>
+                <input type="text" class="form-control" id="inputFacebookTestnet"
+                  placeholder="Provide facebook link of the project....">
+              </div>
+              <div class="form-group">
+                <label for="inputWebsiteTestnet" class="h4 text-primary"><i
+                    class="fa-brands fa-sistrix text-primary"></i> Website URL</label>
+                <input type="text" class="form-control" id="inputWebsiteTestnet"
+                  placeholder="Provide the official website....">
+              </div>
+              <div class="form-group">
+                <label for="inputGithubTestnet" class="h4 text-primary"><i class="fa-brands fa-github text-primary"></i>
+                  Github </label>
+                <input type="text" class="form-control" id="inputGithubTestnet" placeholder="Provide Github link....">
+              </div>
+              <div class="form-group">
+                <label for="inputDiscordTestnet" class="h4 text-primary"><i
+                    class="fa-brands fa-discord text-primary"></i> Discord </label>
+                <input type="text" class="form-control" id="inputDiscordTestnet" placeholder="Provide Discord link....">
+              </div>
+              <div class="form-group">
+                <label for="inputTelegramTestnet" class="h4 text-primary"><i
+                    class="fa-brands fa-telegram text-primary"></i> Telegram </label>
+                <input type="text" class="form-control" id="inputTelegramTestnet"
+                  placeholder="Provide Telegram link....">
+              </div>
+              <div class="form-group">
+                <label for="inputInstagramTestnet" class="h4 text-primary"><i class="fa-brands fa-instagram"></i>
+                  Instagram </label>
+                <input type="text" class="form-control" id="inputInstagramTestnet"
+                  placeholder="Provide Instagram link....">
+              </div>
+              <div class="form-group">
+                <label for="inputYoutubeTestnet" class="h4 text-primary"><i class="fa-brands fa-youtube"></i> Youtube
+                </label>
+                <input type="text" class="form-control" id="inputYoutubeTestnet" placeholder="Provide Youtube link....">
+              </div>
+              <div class="form-group">
+                <label for="inputWhitepaperTestnet" class="h4 text-primary"><i class="fa-solid fa-file"></i> Whitepaper
+                </label>
+                <input type="text" class="form-control" id="inputWhitepaperTestnet"
+                  placeholder="Provide Whitepaper link....">
+              </div>
+              <div class="form-group">
+                <label for="inputBrowserTestnet" class="h4 text-primary"><i class="fa-brands fa-internet-explorer"></i>
+                  Browser </label>
+                <input type="text" class="form-control" id="inputBrowserTestnet"
+                  placeholder="Brave, Firefox, IE etc...">
+              </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-6 col-md-12">
+        <div class="card shadow h-100 mb-4">
+
+          <div class="card-header py-3">
+            <h6 class="h3 font-weight-bold text-success">Your Info(s)</h6>
+          </div>
+          <div class="card-body ">
+            
+
+            <div class="form-group">
+              <label for="inputEmailUser" class="h4 text-success"><i class="fa-solid fa-at text-success"></i>
+                Email</label>
+              <input type="email" class="form-control" id="inputEmailUser" placeholder="Provide your email adress">
+            </div>
+            <div class="form-group">
+              <label for="inputTwitterUser" class="h4 text-success"><i class="fa-brands fa-twitter text-success"></i>
+                Twitter </label>
+              <input type="text" class="form-control" id="inputTwitterUser" placeholder="example @John_doe_official">
+            </div>
+              <div class="form-group">
+              <label for="inputDiscordUser" class="h4 text-success"><i
+                class="fa-brands fa-discord text-success"></i> 
+                Discord </label>
+              <input type="text" class="form-control" id="inputDiscordUser" placeholder="example :  Johndoe#4521">
+            </div>
+            <div class="form-group">
+              <label for="inputGithubUser" class="h4 text-success"><i class="fa-brands fa-github text-success"></i>
+                Github</label>
+              <input type="text" class="form-control" id="inputGithubUser" placeholder="example :  https://github.com/John-Doe">
+            </div>
+            <div class="form-group">
+              <label for="inputTelegramUser" class="h4 text-success"><i
+                class="fa-brands fa-telegram text-success"></i>
+                Telegram </label>
+              <input type="text" class="form-control" id="inputTelegramUser" placeholder="example :  @John_doe1">
+            </div>
+
+
+            
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+    
+    </div>
+
+
+
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Content Row -->
+    <div class="row padding-10-pourcent-left-right">
+
+
+
+
+      <div class="col-xl-6 col-md-12">
+        <div class="card shadow h-100 mb-4">
+
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Our Solution</h6>
+          </div>
+          <div class="card-body">
+            <p>
+              Using an organizer can be important to keep track of a testnet airdrop,
+              as it allows you to easily view, manage, and claim the tokens that you
+              have been allocated. Without an organizer, it can be more difficult
+              to keep track of the various airdrop events that are taking place,
+              and you may risk missing out on tokens that you are eligible for.
+
+
+            </p>
+            <br>
+            <p>
+              <strong>Testnet Organizer</strong> can be a valuable tool for anyone who is interested in testing and
+              experimenting with new blockchain technologies. It can help users to easily manage and
+              participate in testnet events, such as airdrops, faucets, and mining pools, and provide
+              an easy and straightforward way to track and claim tokens. By using our testnet organizer,
+              you can streamline your participation in testnet events and save time and effort.
+
+
+
+
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p> Additionally, by joining a community of blockchain testers, you can connect with other
+              users who are interested in the same technology and learn from their experiences.
+              You can also access resources and information that you may not otherwise have.
+              Our community of blockchain testers is a place to share knowledge and exchange
+              ideas about this technology.
+
+            </p>
+            <br>
+            <p class="h5 font-weight-bold text-dark">
+              For those looking to take advantage of testnet events and want to be up-to-date
+              with the latest developments in blockchain technology, our testnet organizer and
+
+              community can be a great opportunity. We are offering a free trial of our testnet
+              organizer, so you can try it out and see how it can help you. And with that, you
+              will also have access to our community and benefit from the collective knowledge
+              of blockchain enthusiasts.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Illustrations -->
+      <div class="col-xl-6 col-md-12">
+        <div>
+
+          <div>
+            <div class="align-left">
+              <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="assets/images/home_image02.png"
+                alt="homepage01">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <!-- /.container-fluid -->
+  <footer>
+
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-unstyled list-inline align-center">
+          <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 align-center">
+        <p>
+          Copyright &copy 2023 Testnet Organizer<br>
+        </p>
+        <h6><span class="badge badge-success current-version">Version 1.0</span></h6>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/d33bc14455.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="assets/bootstrap/bootstrap-4.6.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
